@@ -1,0 +1,7 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+groq==0.4.1
+edge-tts==6.1.0
+python-dotenv==1.0.0
+pandas==2.1.4
+faker==20.1.0

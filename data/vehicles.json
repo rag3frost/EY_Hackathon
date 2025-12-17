@@ -1,0 +1,242 @@
+[
+  {
+    "id": "VEH001",
+    "owner": "Manoj Tiwari",
+    "phone": "+91-7589859155",
+    "model": "Toyota Fortuner",
+    "year": 2020,
+    "mileage": 30472,
+    "last_service_km": 6137,
+    "last_service_date": "2025-06-29",
+    "sensors": {
+      "oil_pressure": 24.5,
+      "engine_temp": 87,
+      "brake_pad_thickness": 5.4,
+      "battery_voltage": 12.8,
+      "tire_pressure": [
+        35,
+        34,
+        34,
+        33
+      ]
+    },
+    "location": "Pune",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH002",
+    "owner": "Sunita Patel",
+    "phone": "+91-7445924057",
+    "model": "Toyota Fortuner",
+    "year": 2022,
+    "mileage": 31370,
+    "last_service_km": 4502,
+    "last_service_date": "2025-10-10",
+    "sensors": {
+      "oil_pressure": 30.3,
+      "engine_temp": 103,
+      "brake_pad_thickness": 7.8,
+      "battery_voltage": 12.6,
+      "tire_pressure": [
+        30,
+        32,
+        33,
+        33
+      ]
+    },
+    "location": "Chennai",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH003",
+    "owner": "Rajesh Kumar",
+    "phone": "+91-9640955085",
+    "model": "Maruti Swift VXI",
+    "year": 2024,
+    "mileage": 41787,
+    "last_service_km": 8368,
+    "last_service_date": "2025-07-11",
+    "sensors": {
+      "oil_pressure": 49.7,
+      "engine_temp": 100,
+      "brake_pad_thickness": 7.5,
+      "battery_voltage": 12.5,
+      "tire_pressure": [
+        31,
+        30,
+        32,
+        31
+      ]
+    },
+    "location": "Hyderabad",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH004",
+    "owner": "Vikram Rao",
+    "phone": "+91-8854012962",
+    "model": "Volkswagen Polo Highline",
+    "year": 2020,
+    "mileage": 22724,
+    "last_service_km": 13700,
+    "last_service_date": "2025-07-21",
+    "sensors": {
+      "oil_pressure": 51.5,
+      "engine_temp": 101,
+      "brake_pad_thickness": 3.2,
+      "battery_voltage": 12.5,
+      "tire_pressure": [
+        33,
+        31,
+        32,
+        34
+      ]
+    },
+    "location": "Chennai",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH005",
+    "owner": "Manoj Tiwari",
+    "phone": "+91-8024420058",
+    "model": "Renault Kwid Climber",
+    "year": 2021,
+    "mileage": 15688,
+    "last_service_km": 4133,
+    "last_service_date": "2025-09-13",
+    "sensors": {
+      "oil_pressure": 44.3,
+      "engine_temp": 90,
+      "brake_pad_thickness": 7.0,
+      "battery_voltage": 12.5,
+      "tire_pressure": [
+        34,
+        33,
+        35,
+        34
+      ]
+    },
+    "location": "Bangalore",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH006",
+    "owner": "Manoj Tiwari",
+    "phone": "+91-7988112293",
+    "model": "Volkswagen Polo Highline",
+    "year": 2023,
+    "mileage": 34401,
+    "last_service_km": 4137,
+    "last_service_date": "2025-09-08",
+    "sensors": {
+      "oil_pressure": 33.5,
+      "engine_temp": 93,
+      "brake_pad_thickness": 7.6,
+      "battery_voltage": 12.5,
+      "tire_pressure": [
+        30,
+        35,
+        32,
+        31
+      ]
+    },
+    "location": "Hyderabad",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH007",
+    "owner": "Poonam Agarwal",
+    "phone": "+91-7374448166",
+    "model": "Honda City VX",
+    "year": 2021,
+    "mileage": 17113,
+    "last_service_km": 10550,
+    "last_service_date": "2025-09-25",
+    "sensors": {
+      "oil_pressure": 59.6,
+      "engine_temp": 88,
+      "brake_pad_thickness": 5.5,
+      "battery_voltage": 12.6,
+      "tire_pressure": [
+        35,
+        30,
+        35,
+        34
+      ]
+    },
+    "location": "Kolkata",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH008",
+    "owner": "Ravi Verma",
+    "phone": "+91-9370590968",
+    "model": "Mahindra Scorpio S11",
+    "year": 2021,
+    "mileage": 21969,
+    "last_service_km": 8171,
+    "last_service_date": "2025-08-29",
+    "sensors": {
+      "oil_pressure": 56.1,
+      "engine_temp": 103,
+      "brake_pad_thickness": 7.0,
+      "battery_voltage": 12.8,
+      "tire_pressure": [
+        35,
+        30,
+        31,
+        32
+      ]
+    },
+    "location": "Kolkata",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH009",
+    "owner": "Sunita Patel",
+    "phone": "+91-7258941269",
+    "model": "Hyundai Creta SX",
+    "year": 2021,
+    "mileage": 40267,
+    "last_service_km": 2111,
+    "last_service_date": "2025-07-18",
+    "sensors": {
+      "oil_pressure": 57.0,
+      "engine_temp": 105,
+      "brake_pad_thickness": 7.1,
+      "battery_voltage": 12.5,
+      "tire_pressure": [
+        35,
+        34,
+        32,
+        33
+      ]
+    },
+    "location": "Bangalore",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH010",
+    "owner": "Deepak Choudhary",
+    "phone": "+91-9967126866",
+    "model": "Ford Endeavour",
+    "year": 2020,
+    "mileage": 15509,
+    "last_service_km": 8029,
+    "last_service_date": "2025-07-26",
+    "sensors": {
+      "oil_pressure": 46.4,
+      "engine_temp": 85,
+      "brake_pad_thickness": 5.1,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        35,
+        30,
+        32,
+        30
+      ]
+    },
+    "location": "Ahmedabad",
+    "preferred_service_center": "Center_B"
+  }
+]

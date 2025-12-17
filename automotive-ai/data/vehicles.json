@@ -1,0 +1,242 @@
+[
+  {
+    "id": "VEH001",
+    "owner": "Rajesh Kumar",
+    "phone": "+91-8143622413",
+    "model": "Mahindra Scorpio S11",
+    "year": 2022,
+    "mileage": 35333,
+    "last_service_km": 7825,
+    "last_service_date": "2025-07-24",
+    "sensors": {
+      "oil_pressure": 24.5,
+      "engine_temp": 90,
+      "brake_pad_thickness": 7.4,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        33,
+        32,
+        34,
+        31
+      ]
+    },
+    "location": "Delhi",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH002",
+    "owner": "Anjali Gupta",
+    "phone": "+91-7868790396",
+    "model": "Volkswagen Polo Highline",
+    "year": 2021,
+    "mileage": 35885,
+    "last_service_km": 2194,
+    "last_service_date": "2025-10-01",
+    "sensors": {
+      "oil_pressure": 36.9,
+      "engine_temp": 88,
+      "brake_pad_thickness": 7.2,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        31,
+        34,
+        33,
+        35
+      ]
+    },
+    "location": "Delhi",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH003",
+    "owner": "Suresh Reddy",
+    "phone": "+91-7607136112",
+    "model": "Kia Seltos GTX",
+    "year": 2023,
+    "mileage": 20232,
+    "last_service_km": 7632,
+    "last_service_date": "2025-07-11",
+    "sensors": {
+      "oil_pressure": 57.0,
+      "engine_temp": 85,
+      "brake_pad_thickness": 6.0,
+      "battery_voltage": 12.6,
+      "tire_pressure": [
+        34,
+        31,
+        31,
+        31
+      ]
+    },
+    "location": "Ahmedabad",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH004",
+    "owner": "Priya Sharma",
+    "phone": "+91-7102183895",
+    "model": "Volkswagen Polo Highline",
+    "year": 2023,
+    "mileage": 42656,
+    "last_service_km": 10626,
+    "last_service_date": "2025-07-29",
+    "sensors": {
+      "oil_pressure": 40.8,
+      "engine_temp": 95,
+      "brake_pad_thickness": 3.2,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        32,
+        32,
+        33,
+        33
+      ]
+    },
+    "location": "Delhi",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH005",
+    "owner": "Rajesh Kumar",
+    "phone": "+91-7220911927",
+    "model": "Honda City VX",
+    "year": 2021,
+    "mileage": 30509,
+    "last_service_km": 11515,
+    "last_service_date": "2025-10-05",
+    "sensors": {
+      "oil_pressure": 45.7,
+      "engine_temp": 94,
+      "brake_pad_thickness": 7.4,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        32,
+        30,
+        31,
+        32
+      ]
+    },
+    "location": "Mumbai",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH006",
+    "owner": "Vikram Rao",
+    "phone": "+91-8761298953",
+    "model": "Mahindra Scorpio S11",
+    "year": 2020,
+    "mileage": 45859,
+    "last_service_km": 12440,
+    "last_service_date": "2025-06-25",
+    "sensors": {
+      "oil_pressure": 48.5,
+      "engine_temp": 91,
+      "brake_pad_thickness": 7.2,
+      "battery_voltage": 12.4,
+      "tire_pressure": [
+        31,
+        33,
+        35,
+        30
+      ]
+    },
+    "location": "Chennai",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH007",
+    "owner": "Manoj Tiwari",
+    "phone": "+91-8503524983",
+    "model": "Tata Nexon XZ+",
+    "year": 2023,
+    "mileage": 13925,
+    "last_service_km": 10550,
+    "last_service_date": "2025-09-30",
+    "sensors": {
+      "oil_pressure": 50.0,
+      "engine_temp": 98,
+      "brake_pad_thickness": 6.0,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        33,
+        32,
+        32,
+        35
+      ]
+    },
+    "location": "Kolkata",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH008",
+    "owner": "Poonam Agarwal",
+    "phone": "+91-9331978484",
+    "model": "Tata Nexon XZ+",
+    "year": 2024,
+    "mileage": 25462,
+    "last_service_km": 3966,
+    "last_service_date": "2025-09-08",
+    "sensors": {
+      "oil_pressure": 36.2,
+      "engine_temp": 101,
+      "brake_pad_thickness": 5.4,
+      "battery_voltage": 12.7,
+      "tire_pressure": [
+        33,
+        30,
+        31,
+        30
+      ]
+    },
+    "location": "Kolkata",
+    "preferred_service_center": "Center_A"
+  },
+  {
+    "id": "VEH009",
+    "owner": "Anjali Gupta",
+    "phone": "+91-9197008033",
+    "model": "Maruti Swift VXI",
+    "year": 2021,
+    "mileage": 10226,
+    "last_service_km": 10002,
+    "last_service_date": "2025-06-29",
+    "sensors": {
+      "oil_pressure": 41.3,
+      "engine_temp": 85,
+      "brake_pad_thickness": 6.8,
+      "battery_voltage": 12.6,
+      "tire_pressure": [
+        32,
+        32,
+        35,
+        34
+      ]
+    },
+    "location": "Delhi",
+    "preferred_service_center": "Center_B"
+  },
+  {
+    "id": "VEH010",
+    "owner": "Ravi Verma",
+    "phone": "+91-9151701234",
+    "model": "Maruti Swift VXI",
+    "year": 2021,
+    "mileage": 31908,
+    "last_service_km": 11893,
+    "last_service_date": "2025-08-20",
+    "sensors": {
+      "oil_pressure": 52.3,
+      "engine_temp": 94,
+      "brake_pad_thickness": 5.2,
+      "battery_voltage": 12.6,
+      "tire_pressure": [
+        31,
+        30,
+        34,
+        35
+      ]
+    },
+    "location": "Chennai",
+    "preferred_service_center": "Center_B"
+  }
+]

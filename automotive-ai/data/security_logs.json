@@ -1,0 +1,661 @@
+[
+  {
+    "timestamp": "2025-12-17T19:50:25.810487",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:31.920177",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:31.925182",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:32.642914",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:34.652611",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:36.656618",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:38.663256",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:40.719172",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:42.727954",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:44.733159",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:46.750469",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:48.755117",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:50.769863",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:53.064887",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:55.158184",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:57.206871",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:38:59.224779",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:01.271695",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:03.319786",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:05.363684",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:07.439115",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:09.458371",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:11.533107",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:13.586246",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:15.597976",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:17.707916",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:19.726844",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:21.731916",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:23.770504",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:25.787403",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T21:39:27.838808",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:11:34.715283",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH009"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:11:34.718806",
+    "agent": "Diagnosis",
+    "action": "predict_failures",
+    "data": {
+      "vehicle_id": "VEH009"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:11:46.857555",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:11:46.872622",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:06.377292",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH007"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:09.054726",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH008"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:09.929817",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH004"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:10.943211",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH003"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:11.556238",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH007"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:12.063419",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH002"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:12.507527",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH006"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:13.111982",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:13.523332",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH005"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:14.102157",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH009"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:14.654463",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH010"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:15.260469",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH007"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:16.169495",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH003"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:16.726442",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH002"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:36.620965",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:14:36.636280",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:19:53.481852",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH003"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:19:54.519524",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH004"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:04.371312",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:04.378550",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:34.035933",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:34.047947",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:49.840285",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH006"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:49.845701",
+    "agent": "Diagnosis",
+    "action": "predict_failures",
+    "data": {
+      "vehicle_id": "VEH006"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:49.851032",
+    "agent": "CustomerEngagement",
+    "action": "initiate_conversation",
+    "data": {
+      "vehicle_id": "VEH006"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:50.307150",
+    "agent": "Scheduling",
+    "action": "book_appointments",
+    "data": {
+      "vehicle_id": "VEH006"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:50.313112",
+    "agent": "Feedback",
+    "action": "collect_feedback",
+    "data": {
+      "vehicle_id": "VEH006"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:20:50.315235",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:21:15.304520",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:21:15.313808",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:23:09.075449",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH007"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:25:24.728951",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:25:24.732957",
+    "agent": "Diagnosis",
+    "action": "predict_failures",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:25:24.737974",
+    "agent": "CustomerEngagement",
+    "action": "initiate_conversation",
+    "data": {
+      "vehicle_id": "VEH001"
+    },
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:25:57.135266",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH004"
+    },
+    "success": false
+  },
+  {
+    "timestamp": "2025-12-17T22:37:53.655531",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:37:53.664049",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:46:50.428795",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:46:50.444126",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:46:51.962341",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T22:46:51.969357",
+    "agent": "ManufacturingInsights",
+    "action": "analyze_patterns",
+    "data": {},
+    "success": true
+  },
+  {
+    "timestamp": "2025-12-17T23:18:17.941237",
+    "agent": "DataAnalysis",
+    "action": "read_vehicle_data",
+    "data": {
+      "vehicle_id": "VEH002"
+    },
+    "success": false
+  }
+]

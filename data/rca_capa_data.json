@@ -1,0 +1,28 @@
+[
+  {
+    "defect_id": "DEF-2024-045",
+    "component": "Brake Pads",
+    "vehicle_model": "Maruti Swift",
+    "manufacturing_batch": "BRK-2024-Q2",
+    "failure_rate": "30% increase vs Q1",
+    "root_cause": "Supplier quality issue - incorrect material composition",
+    "corrective_action": "Supplier audit initiated, enhanced QC",
+    "preventive_action": "New supplier qualification process",
+    "affected_vehicles": 12,
+    "total_vehicles": 40,
+    "trend_period": "Q2 2024"
+  },
+  {
+    "defect_id": "DEF-2024-032",
+    "component": "Oil Filter",
+    "vehicle_model": "Hyundai Creta",
+    "manufacturing_batch": "OIL-2024-Q1",
+    "failure_rate": "15% increase",
+    "root_cause": "Design flaw in filter housing",
+    "corrective_action": "Design revision implemented",
+    "preventive_action": "Additional stress testing",
+    "affected_vehicles": 8,
+    "total_vehicles": 35,
+    "trend_period": "Q1 2024"
+  }
+]

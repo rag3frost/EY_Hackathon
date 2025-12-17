@@ -1,0 +1,1082 @@
+[
+  {
+    "date": "2025-12-16",
+    "vehicle_id": "VEH010",
+    "component": "Transmission Service",
+    "cost": 4709,
+    "service_center": "Center_B",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-12-11",
+    "vehicle_id": "VEH010",
+    "component": "Engine Tune-up",
+    "cost": 6125,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-12-08",
+    "vehicle_id": "VEH005",
+    "component": "Filters",
+    "cost": 4947,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-12-01",
+    "vehicle_id": "VEH009",
+    "component": "Transmission Service",
+    "cost": 14431,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-29",
+    "vehicle_id": "VEH001",
+    "component": "Transmission Service",
+    "cost": 8419,
+    "service_center": "Center_B",
+    "model": "Maruti Swift",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-29",
+    "vehicle_id": "VEH004",
+    "component": "Transmission Service",
+    "cost": 1549,
+    "service_center": "Center_B",
+    "model": "Maruti Swift",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-22",
+    "vehicle_id": "VEH003",
+    "component": "Transmission Service",
+    "cost": 6804,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-19",
+    "vehicle_id": "VEH007",
+    "component": "Oil Change",
+    "cost": 12968,
+    "service_center": "Center_A",
+    "model": "Honda City",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-17",
+    "vehicle_id": "VEH009",
+    "component": "Transmission Service",
+    "cost": 10706,
+    "service_center": "Center_B",
+    "model": "Toyota Fortuner",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-17",
+    "vehicle_id": "VEH002",
+    "component": "Engine Tune-up",
+    "cost": 7120,
+    "service_center": "Center_B",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-17",
+    "vehicle_id": "VEH006",
+    "component": "Filters",
+    "cost": 10620,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-08",
+    "vehicle_id": "VEH002",
+    "component": "Battery",
+    "cost": 12675,
+    "service_center": "Center_A",
+    "model": "Volkswagen Polo",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-11-03",
+    "vehicle_id": "VEH009",
+    "component": "Battery",
+    "cost": 3139,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-10-31",
+    "vehicle_id": "VEH010",
+    "component": "Brake Pads",
+    "cost": 13206,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-10-30",
+    "vehicle_id": "VEH006",
+    "component": "Filters",
+    "cost": 9613,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-10-27",
+    "vehicle_id": "VEH002",
+    "component": "Oil Change",
+    "cost": 9844,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-10-24",
+    "vehicle_id": "VEH009",
+    "component": "Brake Pads",
+    "cost": 14165,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-10-22",
+    "vehicle_id": "VEH010",
+    "component": "Battery",
+    "cost": 1249,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-10-21",
+    "vehicle_id": "VEH001",
+    "component": "Brake Pads",
+    "cost": 4468,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-10-21",
+    "vehicle_id": "VEH003",
+    "component": "Brake Pads",
+    "cost": 9909,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-10-10",
+    "vehicle_id": "VEH006",
+    "component": "Filters",
+    "cost": 13675,
+    "service_center": "Center_B",
+    "model": "Maruti Swift",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-10-03",
+    "vehicle_id": "VEH008",
+    "component": "Brake Pads",
+    "cost": 9195,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-10-03",
+    "vehicle_id": "VEH004",
+    "component": "Tires",
+    "cost": 13782,
+    "service_center": "Center_A",
+    "model": "Honda City",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-09-30",
+    "vehicle_id": "VEH005",
+    "component": "Transmission Service",
+    "cost": 14839,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-09-21",
+    "vehicle_id": "VEH009",
+    "component": "Filters",
+    "cost": 521,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-09-19",
+    "vehicle_id": "VEH003",
+    "component": "Battery",
+    "cost": 4371,
+    "service_center": "Center_A",
+    "model": "Toyota Fortuner",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-09-17",
+    "vehicle_id": "VEH003",
+    "component": "Transmission Service",
+    "cost": 9750,
+    "service_center": "Center_B",
+    "model": "Renault Kwid",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-09-15",
+    "vehicle_id": "VEH001",
+    "component": "Tires",
+    "cost": 701,
+    "service_center": "Center_A",
+    "model": "Honda City",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-09-12",
+    "vehicle_id": "VEH003",
+    "component": "Battery",
+    "cost": 14242,
+    "service_center": "Center_B",
+    "model": "Tata Nexon",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-09-06",
+    "vehicle_id": "VEH003",
+    "component": "Filters",
+    "cost": 5182,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-09-04",
+    "vehicle_id": "VEH005",
+    "component": "Filters",
+    "cost": 13108,
+    "service_center": "Center_A",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-08-29",
+    "vehicle_id": "VEH008",
+    "component": "Filters",
+    "cost": 14803,
+    "service_center": "Center_A",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-08-28",
+    "vehicle_id": "VEH010",
+    "component": "Brake Pads",
+    "cost": 4536,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-08-28",
+    "vehicle_id": "VEH006",
+    "component": "Brake Pads",
+    "cost": 2460,
+    "service_center": "Center_A",
+    "model": "Toyota Fortuner",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-08-27",
+    "vehicle_id": "VEH006",
+    "component": "Brake Pads",
+    "cost": 5182,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-08-26",
+    "vehicle_id": "VEH007",
+    "component": "Brake Pads",
+    "cost": 8833,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-08-24",
+    "vehicle_id": "VEH009",
+    "component": "Filters",
+    "cost": 5755,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-08-20",
+    "vehicle_id": "VEH005",
+    "component": "Engine Tune-up",
+    "cost": 11350,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-08-14",
+    "vehicle_id": "VEH004",
+    "component": "Engine Tune-up",
+    "cost": 1139,
+    "service_center": "Center_B",
+    "model": "Maruti Swift",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-08-12",
+    "vehicle_id": "VEH010",
+    "component": "Oil Change",
+    "cost": 5417,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-08-02",
+    "vehicle_id": "VEH002",
+    "component": "Tires",
+    "cost": 13169,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-07-30",
+    "vehicle_id": "VEH004",
+    "component": "Brake Pads",
+    "cost": 6306,
+    "service_center": "Center_B",
+    "model": "Toyota Fortuner",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-07-30",
+    "vehicle_id": "VEH009",
+    "component": "Oil Change",
+    "cost": 12614,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-07-29",
+    "vehicle_id": "VEH002",
+    "component": "Engine Tune-up",
+    "cost": 997,
+    "service_center": "Center_B",
+    "model": "Honda City",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-07-27",
+    "vehicle_id": "VEH004",
+    "component": "Engine Tune-up",
+    "cost": 8230,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-07-27",
+    "vehicle_id": "VEH009",
+    "component": "Filters",
+    "cost": 8368,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-07-22",
+    "vehicle_id": "VEH008",
+    "component": "Filters",
+    "cost": 13314,
+    "service_center": "Center_A",
+    "model": "Renault Kwid",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-07-20",
+    "vehicle_id": "VEH003",
+    "component": "Battery",
+    "cost": 10894,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-07-19",
+    "vehicle_id": "VEH007",
+    "component": "Filters",
+    "cost": 3572,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-07-18",
+    "vehicle_id": "VEH007",
+    "component": "Engine Tune-up",
+    "cost": 12525,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-07-01",
+    "vehicle_id": "VEH006",
+    "component": "Tires",
+    "cost": 8419,
+    "service_center": "Center_B",
+    "model": "Toyota Fortuner",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-30",
+    "vehicle_id": "VEH003",
+    "component": "Engine Tune-up",
+    "cost": 2552,
+    "service_center": "Center_B",
+    "model": "Volkswagen Polo",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-29",
+    "vehicle_id": "VEH008",
+    "component": "Oil Change",
+    "cost": 8484,
+    "service_center": "Center_B",
+    "model": "Maruti Swift",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-26",
+    "vehicle_id": "VEH009",
+    "component": "Engine Tune-up",
+    "cost": 6915,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-19",
+    "vehicle_id": "VEH001",
+    "component": "Engine Tune-up",
+    "cost": 12257,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-18",
+    "vehicle_id": "VEH010",
+    "component": "Battery",
+    "cost": 13278,
+    "service_center": "Center_B",
+    "model": "Tata Nexon",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-17",
+    "vehicle_id": "VEH003",
+    "component": "Tires",
+    "cost": 6453,
+    "service_center": "Center_A",
+    "model": "Honda City",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-17",
+    "vehicle_id": "VEH002",
+    "component": "Tires",
+    "cost": 9599,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-06-17",
+    "vehicle_id": "VEH006",
+    "component": "Battery",
+    "cost": 5709,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-12",
+    "vehicle_id": "VEH006",
+    "component": "Transmission Service",
+    "cost": 14881,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-06-10",
+    "vehicle_id": "VEH001",
+    "component": "Battery",
+    "cost": 9411,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-06-06",
+    "vehicle_id": "VEH006",
+    "component": "Filters",
+    "cost": 1745,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-06-01",
+    "vehicle_id": "VEH010",
+    "component": "Engine Tune-up",
+    "cost": 8496,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-05-31",
+    "vehicle_id": "VEH010",
+    "component": "Filters",
+    "cost": 4860,
+    "service_center": "Center_B",
+    "model": "Volkswagen Polo",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-29",
+    "vehicle_id": "VEH003",
+    "component": "Filters",
+    "cost": 14729,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-28",
+    "vehicle_id": "VEH008",
+    "component": "Oil Change",
+    "cost": 1909,
+    "service_center": "Center_A",
+    "model": "Volkswagen Polo",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-05-28",
+    "vehicle_id": "VEH009",
+    "component": "Tires",
+    "cost": 14483,
+    "service_center": "Center_B",
+    "model": "Volkswagen Polo",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-05-27",
+    "vehicle_id": "VEH006",
+    "component": "Transmission Service",
+    "cost": 5141,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-25",
+    "vehicle_id": "VEH008",
+    "component": "Tires",
+    "cost": 4409,
+    "service_center": "Center_B",
+    "model": "Volkswagen Polo",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-05-22",
+    "vehicle_id": "VEH010",
+    "component": "Tires",
+    "cost": 11267,
+    "service_center": "Center_B",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-15",
+    "vehicle_id": "VEH003",
+    "component": "Filters",
+    "cost": 2796,
+    "service_center": "Center_A",
+    "model": "Maruti Swift",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-13",
+    "vehicle_id": "VEH006",
+    "component": "Filters",
+    "cost": 3030,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-05-06",
+    "vehicle_id": "VEH005",
+    "component": "Filters",
+    "cost": 5074,
+    "service_center": "Center_B",
+    "model": "Maruti Swift",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-05-05",
+    "vehicle_id": "VEH001",
+    "component": "Battery",
+    "cost": 10625,
+    "service_center": "Center_A",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-03",
+    "vehicle_id": "VEH001",
+    "component": "Filters",
+    "cost": 4376,
+    "service_center": "Center_A",
+    "model": "Maruti Swift",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-05-01",
+    "vehicle_id": "VEH008",
+    "component": "Battery",
+    "cost": 10988,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-04-28",
+    "vehicle_id": "VEH003",
+    "component": "Engine Tune-up",
+    "cost": 13596,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-04-23",
+    "vehicle_id": "VEH004",
+    "component": "Filters",
+    "cost": 7063,
+    "service_center": "Center_B",
+    "model": "Renault Kwid",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-04-23",
+    "vehicle_id": "VEH006",
+    "component": "Tires",
+    "cost": 2454,
+    "service_center": "Center_A",
+    "model": "Volkswagen Polo",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-04-18",
+    "vehicle_id": "VEH001",
+    "component": "Oil Change",
+    "cost": 9071,
+    "service_center": "Center_B",
+    "model": "Renault Kwid",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-04-17",
+    "vehicle_id": "VEH001",
+    "component": "Engine Tune-up",
+    "cost": 2313,
+    "service_center": "Center_B",
+    "model": "Toyota Fortuner",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-04-15",
+    "vehicle_id": "VEH010",
+    "component": "Engine Tune-up",
+    "cost": 11794,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-04-07",
+    "vehicle_id": "VEH007",
+    "component": "Engine Tune-up",
+    "cost": 12947,
+    "service_center": "Center_B",
+    "model": "Renault Kwid",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-04-06",
+    "vehicle_id": "VEH009",
+    "component": "Filters",
+    "cost": 5058,
+    "service_center": "Center_A",
+    "model": "Renault Kwid",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-03-28",
+    "vehicle_id": "VEH004",
+    "component": "Oil Change",
+    "cost": 3639,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-03-27",
+    "vehicle_id": "VEH007",
+    "component": "Filters",
+    "cost": 14934,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-03-24",
+    "vehicle_id": "VEH003",
+    "component": "Transmission Service",
+    "cost": 11749,
+    "service_center": "Center_A",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-03-21",
+    "vehicle_id": "VEH004",
+    "component": "Oil Change",
+    "cost": 10420,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-03-21",
+    "vehicle_id": "VEH005",
+    "component": "Transmission Service",
+    "cost": 1177,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-03-05",
+    "vehicle_id": "VEH002",
+    "component": "Oil Change",
+    "cost": 13048,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-24",
+    "vehicle_id": "VEH007",
+    "component": "Brake Pads",
+    "cost": 6047,
+    "service_center": "Center_B",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-23",
+    "vehicle_id": "VEH009",
+    "component": "Brake Pads",
+    "cost": 1143,
+    "service_center": "Center_A",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-21",
+    "vehicle_id": "VEH007",
+    "component": "Transmission Service",
+    "cost": 12789,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-02-20",
+    "vehicle_id": "VEH009",
+    "component": "Tires",
+    "cost": 12369,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-17",
+    "vehicle_id": "VEH010",
+    "component": "Engine Tune-up",
+    "cost": 9405,
+    "service_center": "Center_A",
+    "model": "Volkswagen Polo",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-14",
+    "vehicle_id": "VEH010",
+    "component": "Transmission Service",
+    "cost": 11565,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-13",
+    "vehicle_id": "VEH010",
+    "component": "Oil Change",
+    "cost": 12376,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-12",
+    "vehicle_id": "VEH003",
+    "component": "Oil Change",
+    "cost": 7006,
+    "service_center": "Center_A",
+    "model": "Toyota Fortuner",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-02-10",
+    "vehicle_id": "VEH006",
+    "component": "Filters",
+    "cost": 13769,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-02-06",
+    "vehicle_id": "VEH005",
+    "component": "Engine Tune-up",
+    "cost": 8694,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-02-04",
+    "vehicle_id": "VEH008",
+    "component": "Filters",
+    "cost": 4413,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-28",
+    "vehicle_id": "VEH007",
+    "component": "Oil Change",
+    "cost": 6875,
+    "service_center": "Center_A",
+    "model": "Volkswagen Polo",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-01-23",
+    "vehicle_id": "VEH008",
+    "component": "Battery",
+    "cost": 12259,
+    "service_center": "Center_A",
+    "model": "Honda City",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-01-22",
+    "vehicle_id": "VEH005",
+    "component": "Brake Pads",
+    "cost": 1302,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-19",
+    "vehicle_id": "VEH004",
+    "component": "Tires",
+    "cost": 3161,
+    "service_center": "Center_A",
+    "model": "Mahindra Scorpio",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-01-18",
+    "vehicle_id": "VEH004",
+    "component": "Battery",
+    "cost": 12365,
+    "service_center": "Center_B",
+    "model": "Hyundai Creta",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-13",
+    "vehicle_id": "VEH004",
+    "component": "Engine Tune-up",
+    "cost": 2669,
+    "service_center": "Center_B",
+    "model": "Volkswagen Polo",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-01-12",
+    "vehicle_id": "VEH003",
+    "component": "Engine Tune-up",
+    "cost": 9087,
+    "service_center": "Center_A",
+    "model": "Hyundai Creta",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-11",
+    "vehicle_id": "VEH008",
+    "component": "Transmission Service",
+    "cost": 10480,
+    "service_center": "Center_B",
+    "model": "Ford Endeavour",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-11",
+    "vehicle_id": "VEH005",
+    "component": "Transmission Service",
+    "cost": 4587,
+    "service_center": "Center_A",
+    "model": "Maruti Swift",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-11",
+    "vehicle_id": "VEH008",
+    "component": "Battery",
+    "cost": 4809,
+    "service_center": "Center_B",
+    "model": "Honda City",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2025-01-06",
+    "vehicle_id": "VEH003",
+    "component": "Filters",
+    "cost": 14557,
+    "service_center": "Center_A",
+    "model": "Maruti Swift",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-01-06",
+    "vehicle_id": "VEH001",
+    "component": "Oil Change",
+    "cost": 9643,
+    "service_center": "Center_A",
+    "model": "Tata Nexon",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2025-01-02",
+    "vehicle_id": "VEH003",
+    "component": "Oil Change",
+    "cost": 10911,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2024-12-30",
+    "vehicle_id": "VEH004",
+    "component": "Filters",
+    "cost": 9948,
+    "service_center": "Center_A",
+    "model": "Toyota Fortuner",
+    "failure_type": "Corrective"
+  },
+  {
+    "date": "2024-12-26",
+    "vehicle_id": "VEH008",
+    "component": "Brake Pads",
+    "cost": 13753,
+    "service_center": "Center_A",
+    "model": "Ford Endeavour",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2024-12-25",
+    "vehicle_id": "VEH005",
+    "component": "Brake Pads",
+    "cost": 11606,
+    "service_center": "Center_B",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2024-12-25",
+    "vehicle_id": "VEH004",
+    "component": "Tires",
+    "cost": 8250,
+    "service_center": "Center_A",
+    "model": "Kia Seltos",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2024-12-21",
+    "vehicle_id": "VEH009",
+    "component": "Transmission Service",
+    "cost": 10499,
+    "service_center": "Center_B",
+    "model": "Toyota Fortuner",
+    "failure_type": "Preventive"
+  },
+  {
+    "date": "2024-12-21",
+    "vehicle_id": "VEH009",
+    "component": "Oil Change",
+    "cost": 2603,
+    "service_center": "Center_B",
+    "model": "Volkswagen Polo",
+    "failure_type": "Corrective"
+  }
+]

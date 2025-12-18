@@ -184,8 +184,8 @@ User Entity Behavior Analytics for monitoring agent activities and detecting ano
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/autoaide-ai.git
-cd autoaide-ai
+git clone https://github.com/rag3frost/EY_Hackathon
+cd EY_Hackathon
 ```
 
 2. **Setup Backend**

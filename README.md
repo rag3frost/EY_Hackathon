@@ -90,7 +90,7 @@ AutoAide AI is a comprehensive **Agentic AI solution** designed for automotive O
 ### 1. Vehicle Diagnostics Dashboard
 The main diagnostics view featuring a 3D car model with interactive part selection and real-time sensor readings.
 
-![Vehicle Diagnostics](demo/Screenshot%202025-12-17%20222114.png)
+![Vehicle Diagnostics](demo/Screenshot%202025-12-17%20232648.png)
 *Interactive 3D vehicle model with AI-powered diagnostics and health scoring*
 
 ---
@@ -106,7 +106,7 @@ Grid view of all monitored vehicles with health scores, sensor alerts, and quick
 ### 3. Agent Orchestration View
 Visualization of the Master Agent coordinating with 6 Worker Agents in real-time workflows.
 
-![Agent Orchestration](demo/Screenshot%202025-12-17%20222549.png)
+![Agent Orchestration](demo/Screenshot%202025-12-17%20222114.png)
 *Master Agent orchestrating Data Analysis, Diagnosis, Customer Engagement, Scheduling, Feedback, and Manufacturing agents*
 
 ---
@@ -114,7 +114,7 @@ Visualization of the Master Agent coordinating with 6 Worker Agents in real-time
 ### 4. Voice AI Customer Engagement
 Maya - the AI voice agent conducting persuasive customer conversations for service booking.
 
-![Voice Agent](demo/Screenshot%202025-12-17%20222723.png)
+![Voice Agent](demo/Screenshot%202025-12-17%20222549.png)
 *AI-powered voice conversations with transcript, sentiment analysis, and persuasion tactics*
 
 ---
@@ -122,7 +122,8 @@ Maya - the AI voice agent conducting persuasive customer conversations for servi
 ### 5. Service Scheduling Calendar
 Smart scheduling system with service center capacity management and appointment optimization.
 
-![Service Scheduling](demo/Screenshot%202025-12-17%20231827.png)
+![Service Scheduling](
+demo/Screenshot%202025-12-17%20222723.png)
 *Weekly calendar view with service center cards, capacity bars, and booked appointments*
 
 ---
@@ -130,7 +131,7 @@ Smart scheduling system with service center capacity management and appointment 
 ### 6. Service Demand Forecasting
 AI-powered demand prediction for service centers with capacity planning insights.
 
-![Demand Forecast](demo/Screenshot%202025-12-17%20232019.png)
+![Demand Forecast](demo\Screenshot%202025-12-18%20082414.png)
 *Predictive analytics for service demand with weekly forecasts and AI recommendations*
 
 ---
@@ -138,7 +139,7 @@ AI-powered demand prediction for service centers with capacity planning insights
 ### 7. Manufacturing Insights (RCA/CAPA)
 Root Cause Analysis and Corrective Action dashboard for manufacturing feedback loop.
 
-![Manufacturing Insights](demo/Screenshot%202025-12-17%20232344.png)
+![Manufacturing Insights](demo\Screenshot%202025-12-18%20084052.png)
 *Defect pattern detection, supplier analysis, and corrective action tracking*
 
 ---
@@ -146,7 +147,7 @@ Root Cause Analysis and Corrective Action dashboard for manufacturing feedback l
 ### 8. UEBA Security Monitor
 User Entity Behavior Analytics for monitoring agent activities and detecting anomalies.
 
-![Security Monitor](demo/Screenshot%202025-12-17%20232648.png)
+![Security Monitor](demo\Screenshot%202025-12-18%20082757.png)
 *Real-time security scoring, activity logs, and agent permission matrix*
 
 ---

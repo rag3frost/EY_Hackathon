@@ -1,34 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import { Factory, AlertTriangle, TrendingUp, FileText, CheckCircle, Clock, Package, Users } from 'lucide-react';
+import { AlertTriangle, Clock, CheckCircle, Car, TrendingUp, BarChart3, Send } from 'lucide-react';
 import { apiService } from '../../services/apiService';
+import {
+    LineChart,
+    Line,
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    Legend,
+    ResponsiveContainer
+} from 'recharts';
 
 const ManufacturingInsights = () => {
-    const [insights, setInsights] = useState(null);
+    const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [selectedDefect, setSelectedDefect] = useState(null);
+    const [selectedPattern, setSelectedPattern] = useState(null);
 
     useEffect(() => {
-        fetchInsights();
+        fetchData();
     }, []);
 
-    const fetchInsights = async () => {
+    const fetchData = async () => {
         try {
             setLoading(true);
-            const data = await apiService.getManufacturingInsights();
-            setInsights(data);
+            const response = await apiService.getManufacturingInsights();
+            setData(response);
+            // Auto-select first pattern if available
+            if (response?.patterns?.length > 0) {
+                setSelectedPattern(response.patterns[0]);
+            }
         } catch (error) {
-            console.error('Failed to fetch insights:', error);
+            console.error('Failed to fetch RCA/CAPA data:', error);
         } finally {
             setLoading(false);
-        }
-    };
-
-    const getSeverityColor = (severity) => {
-        switch (severity?.toLowerCase()) {
-            case 'critical': return 'text-red-500 bg-red-500/20';
-            case 'high': return 'text-orange-500 bg-orange-500/20';
-            case 'medium': return 'text-yellow-500 bg-yellow-500/20';
-            default: return 'text-green-500 bg-green-500/20';
         }
     };
 
@@ -37,245 +44,327 @@ const ManufacturingInsights = () => {
             <div className="flex-1 p-8 flex items-center justify-center">
                 <div className="text-center">
                     <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-                    <p className="text-gray-400">Loading manufacturing insights...</p>
+                    <p className="text-gray-400">Loading RCA/CAPA data...</p>
                 </div>
             </div>
         );
     }
 
-    const patterns = insights?.patterns || [];
-    const componentFailures = insights?.component_failures || {};
-    const recommendations = insights?.recommendations || [];
+    const stats = data?.stats || { active_defects: 0, in_progress: 0, resolved: 0, affected_vehicles: 0 };
+    const defectTrends = data?.defect_trends || { months: [], series: {} };
+    const failureDistribution = data?.failure_distribution || { months: [], components: {} };
+    const patterns = data?.patterns || [];
+
+    // Prepare chart data for defect trends
+    const trendChartData = defectTrends.months.map((month, idx) => {
+        const point = { month };
+        Object.keys(defectTrends.series).forEach(key => {
+            point[key] = defectTrends.series[key][idx] || 0;
+        });
+        return point;
+    });
+
+    // Prepare chart data for failure distribution
+    const distributionChartData = failureDistribution.months.map((month, idx) => {
+        const point = { month };
+        Object.keys(failureDistribution.components).forEach(key => {
+            point[key] = failureDistribution.components[key][idx] || 0;
+        });
+        return point;
+    });
+
+    // Color mapping for components
+    const componentColors = {
+        Brake: '#ef4444',
+        Oil: '#f59e0b',
+        Battery: '#06b6d4',
+        Other: '#a855f7'
+    };
 
     return (
         <div className="flex-1 p-8 overflow-y-auto">
-            <div className="flex justify-between items-center mb-8">
-                <h2 className="text-3xl font-bold text-white">Manufacturing Insights (RCA/CAPA)</h2>
-                <button
-                    onClick={fetchInsights}
-                    className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-gray-300 hover:bg-white/10 transition-colors flex items-center gap-2"
-                >
-                    <Clock size={16} />
-                    Refresh
-                </button>
-            </div>
-
-            {/* Stats Overview */}
+            {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                 <StatCard
                     icon={AlertTriangle}
-                    label="Patterns Detected"
-                    value={patterns.length}
-                    color="text-orange-500"
-                    bgColor="bg-orange-500/20"
+                    value={stats.active_defects}
+                    label="Active Defects"
+                    iconBg="bg-red-500/20"
+                    iconColor="text-red-500"
                 />
                 <StatCard
-                    icon={Package}
-                    label="Components Tracked"
-                    value={Object.keys(componentFailures).length}
-                    color="text-blue-500"
-                    bgColor="bg-blue-500/20"
+                    icon={Clock}
+                    value={stats.in_progress}
+                    label="In Progress"
+                    iconBg="bg-yellow-500/20"
+                    iconColor="text-yellow-500"
                 />
                 <StatCard
-                    icon={TrendingUp}
-                    label="Total Failures"
-                    value={Object.values(componentFailures).reduce((a, b) => a + b, 0)}
-                    color="text-red-500"
-                    bgColor="bg-red-500/20"
+                    icon={CheckCircle}
+                    value={stats.resolved}
+                    label="Resolved"
+                    iconBg="bg-green-500/20"
+                    iconColor="text-green-500"
                 />
                 <StatCard
-                    icon={FileText}
-                    label="Recommendations"
-                    value={recommendations.length}
-                    color="text-green-500"
-                    bgColor="bg-green-500/20"
+                    icon={Car}
+                    value={stats.affected_vehicles}
+                    label="Affected Vehicles"
+                    iconBg="bg-cyan-500/20"
+                    iconColor="text-cyan-500"
                 />
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Detected Patterns */}
+            {/* Charts Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                {/* Defect Trends Over Time */}
                 <div className="glass-panel p-6">
-                    <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                        <TrendingUp size={24} className="text-orange-500" />
-                        Detected Patterns
+                    <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
+                        <TrendingUp size={20} className="text-primary" />
+                        Defect Trends Over Time
                     </h3>
-                    <div className="space-y-4">
-                        {patterns.length > 0 ? patterns.map((pattern, idx) => (
-                            <div
-                                key={idx}
-                                onClick={() => setSelectedDefect(pattern)}
-                                className={`p-4 rounded-xl bg-white/5 border cursor-pointer transition-all hover:bg-white/10 ${
-                                    selectedDefect === pattern ? 'border-primary' : 'border-transparent'
-                                }`}
-                            >
-                                <div className="flex justify-between items-start mb-2">
-                                    <h4 className="text-white font-medium">{pattern.component}</h4>
-                                    <span className={`px-2 py-1 rounded-full text-xs ${getSeverityColor(pattern.severity)}`}>
-                                        {pattern.severity || 'Medium'}
-                                    </span>
-                                </div>
-                                <p className="text-gray-400 text-sm mb-2">{pattern.description}</p>
-                                <div className="flex gap-4 text-xs text-gray-500">
-                                    <span>Model: {pattern.vehicle_model}</span>
-                                    <span>Trend: {pattern.trend}</span>
-                                </div>
-                            </div>
-                        )) : (
-                            <p className="text-gray-500 text-center py-8">No patterns detected</p>
-                        )}
+                    <div className="h-64">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={trendChartData}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                <XAxis 
+                                    dataKey="month" 
+                                    stroke="#9ca3af" 
+                                    tick={{ fill: '#9ca3af', fontSize: 12 }}
+                                />
+                                <YAxis 
+                                    stroke="#9ca3af" 
+                                    tick={{ fill: '#9ca3af', fontSize: 12 }}
+                                />
+                                <Tooltip
+                                    contentStyle={{
+                                        backgroundColor: '#1f2937',
+                                        border: '1px solid #374151',
+                                        borderRadius: '8px',
+                                        color: '#fff'
+                                    }}
+                                />
+                                <Legend />
+                                {Object.keys(defectTrends.series).map((key) => (
+                                    <Line
+                                        key={key}
+                                        type="monotone"
+                                        dataKey={key}
+                                        stroke={componentColors[key] || '#8884d8'}
+                                        strokeWidth={2}
+                                        dot={{ fill: componentColors[key] || '#8884d8', strokeWidth: 2, r: 4 }}
+                                        activeDot={{ r: 6 }}
+                                    />
+                                ))}
+                            </LineChart>
+                        </ResponsiveContainer>
                     </div>
                 </div>
 
-                {/* Component Failures Chart */}
+                {/* Failure Distribution by Component */}
                 <div className="glass-panel p-6">
-                    <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                        <Package size={24} className="text-blue-500" />
-                        Component Failure Distribution
+                    <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
+                        <BarChart3 size={20} className="text-primary" />
+                        Failure Distribution by Component
                     </h3>
-                    <div className="space-y-4">
-                        {Object.entries(componentFailures).map(([component, count], idx) => {
-                            const maxCount = Math.max(...Object.values(componentFailures));
-                            const percentage = (count / maxCount) * 100;
-                            
-                            return (
-                                <div key={idx}>
-                                    <div className="flex justify-between text-sm mb-2">
-                                        <span className="text-gray-300">{component}</span>
-                                        <span className="text-white font-medium">{count} failures</span>
-                                    </div>
-                                    <div className="h-4 bg-white/10 rounded-full overflow-hidden">
-                                        <div
-                                            className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all"
-                                            style={{ width: `${percentage}%` }}
-                                        />
-                                    </div>
-                                </div>
-                            );
-                        })}
+                    <div className="h-64">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={distributionChartData}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                                <XAxis 
+                                    dataKey="month" 
+                                    stroke="#9ca3af" 
+                                    tick={{ fill: '#9ca3af', fontSize: 12 }}
+                                />
+                                <YAxis 
+                                    stroke="#9ca3af" 
+                                    tick={{ fill: '#9ca3af', fontSize: 12 }}
+                                />
+                                <Tooltip
+                                    contentStyle={{
+                                        backgroundColor: '#1f2937',
+                                        border: '1px solid #374151',
+                                        borderRadius: '8px',
+                                        color: '#fff'
+                                    }}
+                                />
+                                <Legend />
+                                {Object.keys(failureDistribution.components).map((key) => (
+                                    <Bar
+                                        key={key}
+                                        dataKey={key}
+                                        fill={componentColors[key] || '#8884d8'}
+                                        radius={[4, 4, 0, 0]}
+                                    />
+                                ))}
+                            </BarChart>
+                        </ResponsiveContainer>
                     </div>
                 </div>
             </div>
 
-            {/* RCA/CAPA Details */}
-            {selectedDefect && (
-                <div className="glass-panel p-6 mt-8">
-                    <div className="flex justify-between items-start mb-6">
-                        <h3 className="text-xl font-semibold text-white flex items-center gap-2">
-                            <Factory size={24} className="text-primary" />
-                            Root Cause Analysis & Corrective Actions
-                        </h3>
-                        <button
-                            onClick={() => setSelectedDefect(null)}
-                            className="text-gray-400 hover:text-white"
-                        >
-                            ✕
-                        </button>
-                    </div>
+            {/* Pattern Alert Cards */}
+            <div className="space-y-4">
+                {patterns.map((pattern) => (
+                    <PatternAlertCard
+                        key={pattern.id}
+                        pattern={pattern}
+                        isSelected={selectedPattern?.id === pattern.id}
+                        onSelect={() => setSelectedPattern(pattern)}
+                    />
+                ))}
+            </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 className="text-white font-medium mb-4 flex items-center gap-2">
-                                <AlertTriangle size={18} className="text-red-500" />
-                                Root Cause Analysis (RCA)
-                            </h4>
-                            <div className="space-y-4">
-                                <InfoRow label="Component" value={selectedDefect.component} />
-                                <InfoRow label="Vehicle Model" value={selectedDefect.vehicle_model} />
-                                <InfoRow label="Failure Trend" value={selectedDefect.trend} />
-                                <InfoRow label="Description" value={selectedDefect.description} />
-                                <InfoRow 
-                                    label="Root Cause" 
-                                    value="Supplier quality issue - incorrect material composition in batch" 
-                                />
-                            </div>
-                        </div>
-
-                        <div>
-                            <h4 className="text-white font-medium mb-4 flex items-center gap-2">
-                                <CheckCircle size={18} className="text-green-500" />
-                                Corrective & Preventive Actions (CAPA)
-                            </h4>
-                            <div className="space-y-3">
-                                <ActionItem 
-                                    status="complete"
-                                    action="Identified affected batch numbers"
-                                />
-                                <ActionItem 
-                                    status="complete"
-                                    action="Notified supplier of quality issue"
-                                />
-                                <ActionItem 
-                                    status="in-progress"
-                                    action="Flagged all affected vehicles for inspection"
-                                />
-                                <ActionItem 
-                                    status="in-progress"
-                                    action="Enhanced QC procedures implemented"
-                                />
-                                <ActionItem 
-                                    status="pending"
-                                    action="Supplier audit scheduled"
-                                />
-                                <ActionItem 
-                                    status="pending"
-                                    action="New supplier qualification process"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Manufacturing Alert */}
-                    <div className="mt-6 p-4 bg-yellow-500/10 border border-yellow-500/30 rounded-xl">
-                        <div className="flex items-start gap-3">
-                            <Users size={20} className="text-yellow-500 mt-1" />
-                            <div>
-                                <p className="text-yellow-400 font-medium">Manufacturing Team Alert</p>
-                                <p className="text-gray-400 text-sm mt-1">
-                                    Alert sent to production team with full analysis. 
-                                    All vehicles with affected components are scheduled for preventive inspection.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            {/* RCA/CAPA Details Panel */}
+            {selectedPattern && (
+                <RCADetailPanel pattern={selectedPattern} onClose={() => setSelectedPattern(null)} />
             )}
+        </div>
+    );
+};
 
-            {/* Recommendations */}
-            <div className="glass-panel p-6 mt-8">
-                <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                    <FileText size={24} className="text-green-500" />
-                    System Recommendations
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {recommendations.map((rec, idx) => (
-                        <div key={idx} className="p-4 bg-white/5 rounded-xl border border-white/10">
-                            <p className="text-white text-sm">{rec}</p>
+// Stat Card Component
+const StatCard = ({ icon: Icon, value, label, iconBg, iconColor }) => (
+    <div className="glass-panel p-6 flex items-center gap-4">
+        <div className={`w-14 h-14 rounded-xl ${iconBg} flex items-center justify-center`}>
+            <Icon size={28} className={iconColor} />
+        </div>
+        <div>
+            <p className="text-3xl font-bold text-white">{value}</p>
+            <p className="text-gray-400 text-sm">{label}</p>
+        </div>
+    </div>
+);
+
+// Pattern Alert Card Component
+const PatternAlertCard = ({ pattern, isSelected, onSelect }) => {
+    const getSeverityStyles = (severity) => {
+        switch (severity) {
+            case 'critical':
+                return 'border-red-500/50 bg-red-500/5';
+            case 'high':
+                return 'border-orange-500/50 bg-orange-500/5';
+            default:
+                return 'border-yellow-500/50 bg-yellow-500/5';
+        }
+    };
+
+    const getStatusBadge = (status) => {
+        switch (status) {
+            case 'active':
+                return <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs font-medium">Investigation Active</span>;
+            case 'in_progress':
+                return <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs font-medium">In Progress</span>;
+            default:
+                return <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-xs font-medium">Closed</span>;
+        }
+    };
+
+    return (
+        <div 
+            className={`glass-panel p-6 border-l-4 cursor-pointer transition-all hover:bg-white/5 ${getSeverityStyles(pattern.severity)} ${isSelected ? 'ring-2 ring-primary' : ''}`}
+            onClick={onSelect}
+        >
+            <div className="flex items-start justify-between">
+                <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mt-1">
+                        <AlertTriangle size={20} className="text-red-500" />
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold text-red-400">
+                            Pattern Detected: {pattern.title}
+                        </h4>
+                        <p className="text-gray-400 mt-1 max-w-3xl">
+                            {pattern.description}
+                        </p>
+                        <div className="flex items-center gap-3 mt-4">
+                            <span className="px-3 py-1 bg-white/10 text-gray-300 rounded-full text-xs font-medium">
+                                {pattern.affected_count} Vehicles Affected
+                            </span>
+                            <span className="px-3 py-1 bg-white/10 text-gray-300 rounded-full text-xs font-medium">
+                                Batch: {pattern.batch}
+                            </span>
+                            {getStatusBadge(pattern.investigation_status)}
                         </div>
-                    ))}
+                    </div>
+                </div>
+                <button 
+                    className="flex items-center gap-2 px-4 py-2 bg-primary/20 text-primary rounded-lg hover:bg-primary/30 transition-colors"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        alert('Alert sent to manufacturing team!');
+                    }}
+                >
+                    <Send size={16} />
+                    Alert Team
+                </button>
+            </div>
+        </div>
+    );
+};
+
+// RCA Detail Panel Component
+const RCADetailPanel = ({ pattern, onClose }) => {
+    return (
+        <div className="glass-panel p-6 mt-6">
+            <div className="flex justify-between items-center mb-6">
+                <h3 className="text-xl font-semibold text-white">
+                    Root Cause Analysis & Corrective Actions
+                </h3>
+                <button
+                    onClick={onClose}
+                    className="text-gray-400 hover:text-white transition-colors"
+                >
+                    ✕
+                </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* RCA Section */}
+                <div>
+                    <h4 className="text-white font-medium mb-4 flex items-center gap-2">
+                        <AlertTriangle size={18} className="text-red-500" />
+                        Root Cause Analysis (RCA)
+                    </h4>
+                    <div className="space-y-3">
+                        <InfoRow label="Component" value={pattern.component} />
+                        <InfoRow label="Vehicle Model" value={pattern.vehicle_model} />
+                        <InfoRow label="Batch Number" value={pattern.batch} />
+                        <InfoRow label="Affected Count" value={`${pattern.affected_count} vehicles`} />
+                    </div>
+                </div>
+
+                {/* CAPA Section */}
+                <div>
+                    <h4 className="text-white font-medium mb-4 flex items-center gap-2">
+                        <CheckCircle size={18} className="text-green-500" />
+                        Corrective & Preventive Actions (CAPA)
+                    </h4>
+                    <div className="space-y-2">
+                        {pattern.actions?.map((item, idx) => (
+                            <ActionItem
+                                key={idx}
+                                action={item.action}
+                                status={item.status}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
     );
 };
 
-const StatCard = ({ icon: Icon, label, value, color, bgColor }) => (
-    <div className="glass-panel p-6">
-        <div className={`w-12 h-12 rounded-xl ${bgColor} flex items-center justify-center mb-4`}>
-            <Icon size={24} className={color} />
-        </div>
-        <p className="text-gray-400 text-sm mb-1">{label}</p>
-        <p className="text-3xl font-bold text-white">{value}</p>
-    </div>
-);
-
+// Info Row Component
 const InfoRow = ({ label, value }) => (
     <div className="flex justify-between py-2 border-b border-white/5">
         <span className="text-gray-400 text-sm">{label}</span>
-        <span className="text-white text-sm text-right max-w-[60%]">{value}</span>
+        <span className="text-white text-sm font-medium">{value}</span>
     </div>
 );
 
-const ActionItem = ({ status, action }) => {
+// Action Item Component
+const ActionItem = ({ action, status }) => {
     const getStatusIcon = () => {
         switch (status) {
             case 'complete':
@@ -287,18 +376,21 @@ const ActionItem = ({ status, action }) => {
         }
     };
 
+    const getStatusStyles = () => {
+        switch (status) {
+            case 'complete':
+                return 'bg-green-500/10 text-green-400';
+            case 'in-progress':
+                return 'bg-primary/10 text-primary';
+            default:
+                return 'bg-white/5 text-gray-400';
+        }
+    };
+
     return (
-        <div className={`flex items-center gap-3 p-3 rounded-lg ${
-            status === 'complete' ? 'bg-green-500/10' :
-            status === 'in-progress' ? 'bg-primary/10' : 'bg-white/5'
-        }`}>
+        <div className={`flex items-center gap-3 p-3 rounded-lg ${getStatusStyles()}`}>
             {getStatusIcon()}
-            <span className={`text-sm ${
-                status === 'complete' ? 'text-green-400' :
-                status === 'in-progress' ? 'text-primary' : 'text-gray-400'
-            }`}>
-                {action}
-            </span>
+            <span className="text-sm">{action}</span>
         </div>
     );
 };

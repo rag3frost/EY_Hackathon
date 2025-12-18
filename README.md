@@ -268,8 +268,8 @@ This project is built for demonstration purposes as part of a business challenge
 
 <div align="center">
 
-**Built with ❤️ for Automotive Innovation**
+**Built Team S43N**
 
-*Powered by Agentic AI*
+
 
 </div>

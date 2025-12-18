@@ -1,28 +1,133 @@
-[
-  {
-    "defect_id": "DEF-2024-045",
-    "component": "Brake Pads",
-    "vehicle_model": "Maruti Swift",
-    "manufacturing_batch": "BRK-2024-Q2",
-    "failure_rate": "30% increase vs Q1",
-    "root_cause": "Supplier quality issue - incorrect material composition",
-    "corrective_action": "Supplier audit initiated, enhanced QC",
-    "preventive_action": "New supplier qualification process",
-    "affected_vehicles": 12,
-    "total_vehicles": 40,
-    "trend_period": "Q2 2024"
+{
+  "defects": [
+    {
+      "defect_id": "DEF-2024-045",
+      "component": "Brake Pads",
+      "vehicle_model": "Maruti Swift",
+      "manufacturing_batch": "BRK-2024-Q2",
+      "failure_rate": "30% increase vs Q1",
+      "root_cause": "Supplier quality issue - incorrect material composition",
+      "corrective_action": "Supplier audit initiated, enhanced QC",
+      "preventive_action": "New supplier qualification process",
+      "affected_vehicles": 12,
+      "total_vehicles": 40,
+      "status": "active",
+      "severity": "critical",
+      "trend_period": "Q2-Q4 2024",
+      "investigation_status": "active",
+      "created_date": "2024-06-15"
+    },
+    {
+      "defect_id": "DEF-2024-032",
+      "component": "Oil Filter",
+      "vehicle_model": "Hyundai Creta",
+      "manufacturing_batch": "OIL-2024-Q1",
+      "failure_rate": "15% increase",
+      "root_cause": "Design flaw in filter housing",
+      "corrective_action": "Design revision implemented",
+      "preventive_action": "Additional stress testing",
+      "affected_vehicles": 8,
+      "total_vehicles": 35,
+      "status": "in_progress",
+      "severity": "medium",
+      "trend_period": "Q1 2024",
+      "investigation_status": "in_progress",
+      "created_date": "2024-03-10"
+    },
+    {
+      "defect_id": "DEF-2024-028",
+      "component": "Battery",
+      "vehicle_model": "Tata Nexon",
+      "manufacturing_batch": "BAT-2024-Q1",
+      "failure_rate": "8% increase",
+      "root_cause": "Environmental stress during storage",
+      "corrective_action": "Storage protocol updated",
+      "preventive_action": "Climate-controlled storage implemented",
+      "affected_vehicles": 5,
+      "total_vehicles": 30,
+      "status": "resolved",
+      "severity": "low",
+      "trend_period": "Q1 2024",
+      "investigation_status": "closed",
+      "created_date": "2024-02-20"
+    },
+    {
+      "defect_id": "DEF-2024-051",
+      "component": "Brake Pads",
+      "vehicle_model": "Honda City",
+      "manufacturing_batch": "BRK-2024-Q3",
+      "failure_rate": "25% increase",
+      "root_cause": "Supplier quality issue - batch contamination",
+      "corrective_action": "Batch recalled, supplier notified",
+      "preventive_action": "Enhanced incoming inspection",
+      "affected_vehicles": 6,
+      "total_vehicles": 25,
+      "status": "resolved",
+      "severity": "high",
+      "trend_period": "Q3 2024",
+      "investigation_status": "closed",
+      "created_date": "2024-08-05"
+    }
+  ],
+  "defect_trends": {
+    "months": ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "series": {
+      "Brake": [4, 6, 8, 12, 15, 10],
+      "Oil": [1, 2, 3, 4, 5, 4],
+      "Battery": [2, 3, 3, 4, 3, 2]
+    }
   },
-  {
-    "defect_id": "DEF-2024-032",
-    "component": "Oil Filter",
-    "vehicle_model": "Hyundai Creta",
-    "manufacturing_batch": "OIL-2024-Q1",
-    "failure_rate": "15% increase",
-    "root_cause": "Design flaw in filter housing",
-    "corrective_action": "Design revision implemented",
-    "preventive_action": "Additional stress testing",
-    "affected_vehicles": 8,
-    "total_vehicles": 35,
-    "trend_period": "Q1 2024"
-  }
-]
+  "failure_distribution": {
+    "months": ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "components": {
+      "Brake": [4, 8, 10, 12, 15, 13],
+      "Oil": [2, 4, 3, 5, 6, 4],
+      "Battery": [3, 5, 6, 8, 9, 7],
+      "Other": [1, 2, 3, 4, 3, 2]
+    }
+  },
+  "stats": {
+    "active_defects": 3,
+    "in_progress": 1,
+    "resolved": 2,
+    "affected_vehicles": 25
+  },
+  "patterns": [
+    {
+      "id": "PAT-001",
+      "title": "Brake Pad Failures",
+      "description": "30% increase in brake pad failures detected for Maruti Swift vehicles in Q2-Q4 2024. Supplier batch BRK-2024-Q2 identified as source of defective components.",
+      "component": "Brake Pads",
+      "vehicle_model": "Maruti Swift",
+      "batch": "BRK-2024-Q2",
+      "affected_count": 12,
+      "severity": "critical",
+      "investigation_status": "active",
+      "actions": [
+        {"action": "Identified affected batch numbers", "status": "complete"},
+        {"action": "Notified supplier of quality issue", "status": "complete"},
+        {"action": "Flagged all affected vehicles for inspection", "status": "in-progress"},
+        {"action": "Enhanced QC procedures implemented", "status": "in-progress"},
+        {"action": "Supplier audit scheduled", "status": "pending"},
+        {"action": "New supplier qualification process", "status": "pending"}
+      ]
+    },
+    {
+      "id": "PAT-002",
+      "title": "Oil Filter Housing Leaks",
+      "description": "Design flaw identified in oil filter housing causing premature leaks in Hyundai Creta models.",
+      "component": "Oil Filter",
+      "vehicle_model": "Hyundai Creta",
+      "batch": "OIL-2024-Q1",
+      "affected_count": 8,
+      "severity": "medium",
+      "investigation_status": "in_progress",
+      "actions": [
+        {"action": "Root cause analysis completed", "status": "complete"},
+        {"action": "Design revision submitted", "status": "complete"},
+        {"action": "Prototype testing underway", "status": "in-progress"},
+        {"action": "Fleet-wide inspection planned", "status": "pending"}
+      ]
+    }
+  ]
+}

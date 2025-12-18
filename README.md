@@ -122,8 +122,7 @@ Maya - the AI voice agent conducting persuasive customer conversations for servi
 ### 5. Service Scheduling Calendar
 Smart scheduling system with service center capacity management and appointment optimization.
 
-![Service Scheduling](
-demo/Screenshot%202025-12-17%20222723.png)
+![Service Scheduling](demo/Screenshot%202025-12-17%20222723.png)
 *Weekly calendar view with service center cards, capacity bars, and booked appointments*
 
 ---
@@ -131,7 +130,7 @@ demo/Screenshot%202025-12-17%20222723.png)
 ### 6. Service Demand Forecasting
 AI-powered demand prediction for service centers with capacity planning insights.
 
-![Demand Forecast](demo\Screenshot%202025-12-18%20082414.png)
+![Demand Forecast](demo/Screenshot%202025-12-18%20082414.png)
 *Predictive analytics for service demand with weekly forecasts and AI recommendations*
 
 ---
@@ -139,7 +138,7 @@ AI-powered demand prediction for service centers with capacity planning insights
 ### 7. Manufacturing Insights (RCA/CAPA)
 Root Cause Analysis and Corrective Action dashboard for manufacturing feedback loop.
 
-![Manufacturing Insights](demo\Screenshot%202025-12-18%20084052.png)
+![Manufacturing Insights](demo/Screenshot%202025-12-18%20084052.png)
 *Defect pattern detection, supplier analysis, and corrective action tracking*
 
 ---
@@ -147,7 +146,7 @@ Root Cause Analysis and Corrective Action dashboard for manufacturing feedback l
 ### 8. UEBA Security Monitor
 User Entity Behavior Analytics for monitoring agent activities and detecting anomalies.
 
-![Security Monitor](demo\Screenshot%202025-12-18%20082757.png)
+![Security Monitor](demo/Screenshot%202025-12-18%20082757.png)
 *Real-time security scoring, activity logs, and agent permission matrix*
 
 ---
